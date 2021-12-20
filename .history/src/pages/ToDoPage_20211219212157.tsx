@@ -1,0 +1,18 @@
+import React from "react";
+import { ToDoForm } from "../components/ToDoForm";
+import { ToDoList } from "../components/ToDoList";
+
+export const ToDoPage: React.FC = () => {
+  const addToDo = (userInput: string) => {};
+
+  const removeToDo = (id: number) => {};
+
+  const comleteHanhler = (id: number) => {};
+
+  return (
+    <React.Fragment>
+      <ToDoForm addToDo={addToDo} />
+      <ToDoList removeToDo={removeToDo} comleteHanhler={comleteHanhler} />
+    </React.Fragment>
+  );
+};
